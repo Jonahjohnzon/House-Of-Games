@@ -1,0 +1,140 @@
+.head {
+  width: 100%;
+  height: 10vh;
+  background: url("../../public/IMAGES/arcane.jpg");
+  position: absolute;
+  -webkit-box-shadow: 2px 2px 20px;
+          box-shadow: 2px 2px 20px;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  padding-top: 15vh;
+}
+
+.body h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 57px;
+  font-size: 45px;
+  color: white;
+  font-family: "GalacticaGrid", sans-serif;
+  font-weight: normal;
+  background-color: rgba(41, 46, 56, 0.6);
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+}
+
+.body h1 span {
+  color: red;
+}
+
+.body .position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .position .totalgames {
+  margin-top: 15%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.body .position .menubody {
+  width: 300px;
+  height: 390px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  background-color: #292e38;
+  -webkit-box-shadow: 2px 3px 20px black;
+          box-shadow: 2px 3px 20px black;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.body .position .menubody:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.body .position .menubody .link .img {
+  width: 100%;
+  height: 50%;
+  background-size: 120%;
+  background-position: center center;
+}
+
+.body .position .menubody .title {
+  width: 100%;
+  height: 50%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.body .position .menubody .title h6 {
+  margin-top: -20px;
+}
+
+.body .position .menubody .title .p {
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.body .position .menubody .title .p h6 {
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 930px) {
+  .menuflex {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuflex h1 {
+    position: static;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 13vh;
+  }
+  .menuflex .position .totalgames {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Menucart.css.map */

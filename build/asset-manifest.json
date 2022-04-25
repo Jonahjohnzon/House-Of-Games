@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.724f9020.css",
+    "main.js": "/static/js/main.2bd13471.js",
+    "static/media/arcane.jpg": "/static/media/arcane.b026525edb4530e2aea4.jpg",
+    "static/media/GalacticaGrid.otf": "/static/media/GalacticaGrid.7bf4fa33e93d9e79933d.otf",
+    "index.html": "/index.html",
+    "main.724f9020.css.map": "/static/css/main.724f9020.css.map",
+    "main.2bd13471.js.map": "/static/js/main.2bd13471.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.724f9020.css",
+    "static/js/main.2bd13471.js"
+  ]
+}

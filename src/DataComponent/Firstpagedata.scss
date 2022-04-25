@@ -1,0 +1,17 @@
+.gamebody{
+    overflow: hidden;
+    width: 350px;
+    background-color: rgb(41, 46, 56);
+    border-radius: 10px;
+    &:hover{
+        background-color:rgb(47,53,65)
+    }
+    .populargame{
+    color:white;
+    text-align: center;
+}
+h5{
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}}

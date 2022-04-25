@@ -1,0 +1,22 @@
+.gamebody {
+  overflow: hidden;
+  width: 350px;
+  background-color: #292e38;
+  border-radius: 10px;
+}
+
+.gamebody:hover {
+  background-color: #2f3541;
+}
+
+.gamebody .populargame {
+  color: white;
+  text-align: center;
+}
+
+.gamebody h5 {
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+/*# sourceMappingURL=Firstpagedata.css.map */

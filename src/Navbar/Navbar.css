@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
+.Nav {
+  background: rgba(24, 28, 35, 0.3);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  overflow: hidden;
+  z-index: 60;
+  -webkit-box-shadow: 6px 6px 19px rgba(24, 28, 35, 0.4);
+          box-shadow: 6px 6px 19px rgba(24, 28, 35, 0.4);
+}
+
+.Nav img {
+  margin-left: 1vw;
+}
+
+.Nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 40%;
+  margin-right: 4vw;
+  height: 100%;
+  font-family: "poppins";
+}
+
+.Nav ul li {
+  font-weight: normal;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.FrontImage {
+  width: 100%;
+  height: 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.FrontImage .img {
+  width: 100%;
+  height: 200px;
+  background: center center;
+  background-size: 100%;
+  -webkit-transition: background-size ease-in-out 0.4s;
+  transition: background-size ease-in-out 0.4s;
+}
+
+.FrontImage .img:hover {
+  background-size: 103%;
+}
+
+@media only screen and (max-width: 930px) {
+  .Nav ul {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

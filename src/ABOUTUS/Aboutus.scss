@@ -1,0 +1,108 @@
+.About{
+    width: 100vw;
+    height: 100vh;
+    
+    .background{
+        width: 78%;
+        height: 40%;
+        position: absolute;
+        background-color:rgb(41, 46, 56);
+        top:40%;
+        left: 10%;
+        box-shadow: 2px 2px 20px;
+
+    }
+    .aboutbody{
+        width: 80%;
+        height: 70%;
+        display: flex;
+        position: absolute;
+        top: 10vh;
+        right: 10vw;
+        align-items: flex-end;
+        justify-content: space-around;
+      
+        .img{
+            width:40%;
+            height: 70%;
+            background:url(../../public/IMAGES/arcane.jpg) center center;
+            background-size: cover;
+            margin-bottom: 50px;
+            box-shadow: 2px 2px 20px;
+            
+        }
+        .wording{
+          
+            width:50%;
+            height: 80%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .header{
+                text-align: center;
+                font-size: 8vw;
+                font-weight: bold;
+                color: rgb(41, 46, 56);
+                span{
+                    color: rgb(145, 20, 20);
+                }
+            }
+            .p{
+            
+                width: 80%;
+                text-align: center;
+            }
+
+
+        }
+    }
+    .foot{
+        width: 100%;
+        height: 10%;
+        background:url(../../public/IMAGES/arcane.jpg) ;
+        position:absolute;
+        bottom: 0px;
+        box-shadow: 2px 2px 20px;
+        &::after{
+         content: "";
+         width: 100%;
+         height:100%;
+         position:absolute;
+         bottom: 0px;
+         background-color: black;
+         opacity: 30%;
+        }
+    }
+}
+@media only screen and (max-width:590px) {
+.About{
+    .aboutbody{
+        overflow: hidden;
+        .wording{
+            .header{
+                font-size: 6vw;
+            }
+            .p{
+            font-size: 2.5vw;
+            }
+        }
+    }
+}
+  }
+  @media only screen and (max-width:700px) and (max-height:400px) {
+    .About{
+        .aboutbody{
+            overflow: hidden;
+            .wording{
+                .header{
+                    font-size: 2vw;
+                }
+                .p{
+                font-size: 1.2vw;
+                }
+            }
+        }
+    }
+      }

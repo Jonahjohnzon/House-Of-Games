@@ -1,0 +1,98 @@
+.head{
+    width: 100%;
+    height: 10vh;
+    background:url("../../public/IMAGES/arcane.jpg");
+    position: absolute;
+    box-shadow: 2px 2px 20px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 15vh;
+h1{
+    display: flex;
+    padding: 15px 57px;
+    font-size: 45px;
+    color: white;
+    font-family: "GalacticaGrid", sans-serif;
+    font-weight: normal;
+    background-color:rgba(41, 46, 56,0.6);
+    box-shadow: 1px 1px 10px black;
+    span{
+        color:red;
+    }
+}
+.position{
+    display: flex;
+    justify-content: center;
+    
+
+   
+    .totalgames{ 
+    margin-top: 15%;
+    width: 80%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    }
+    .menubody{
+    width: 300px;
+    height: 390px;
+    margin-right: 20px;
+    margin-bottom:40px;
+    overflow: hidden;
+    background-color:rgb(41, 46, 56);
+    box-shadow: 2px 3px 20px black;
+    transition:transform 0.3s ease-in-out ;
+    &:hover{
+        transform: scale(1.02);
+    }
+    .link{
+    
+     .img{
+         width:100%;
+         height:50%;
+         background-size: 120%;
+         background-position:center center;
+     }
+    }
+    .title{
+   width: 100%;
+     height: 50%; 
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     h6{
+         margin-top: -20px;
+     }
+     .p{
+      font-weight: lighter;
+      font-size: 13px;
+       h6{
+        font-size: 11px;
+        margin-bottom: 4px;
+       }
+     }
+    }
+}}}
+@media only screen and (max-width:930px) {
+  .menuflex{
+width: 100%;
+display: flex;
+flex-direction: column;
+h1{
+    position: static;
+    align-self: center;
+    margin-top: 13vh;
+}
+.position{
+    .totalgames{
+        width: 100%;
+    }
+}
+ }
+}

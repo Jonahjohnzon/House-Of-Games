@@ -1,0 +1,1116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yesteryear&display=swap");
+@font-face {
+  font-family: GalacticaGrid;
+  src: url("../public/GalacticaGrid.otf");
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: poppins;
+  overflow-x: hidden;
+}
+
+.App {
+  height: 100%;
+}
+
+.App .menuicon {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  width: 15vw;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 1vh;
+  right: 5vw;
+}
+
+.App .dropdown {
+  position: fixed;
+  z-index: 100;
+  right: 0vw;
+  top: 10vh;
+  color: white;
+  width: 30vw;
+  height: 70vh;
+  background: rgba(24, 28, 35, 0.4);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-box-shadow: 6px 6px 19px rgba(24, 28, 35, 0.4);
+          box-shadow: 6px 6px 19px rgba(24, 28, 35, 0.4);
+}
+
+.App .dropdown .ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.App .dropdown .ul li {
+  width: 100%;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+.App .mainImage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../public/IMAGES/arcane.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  -webkit-box-shadow: 0px 3px 40px black;
+          box-shadow: 0px 3px 40px black;
+}
+
+.App .mainImage::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 80%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.App .mainImage .mydisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 30vh;
+}
+
+.App .mainImage .mydisplay .mainpage {
+  z-index: 100;
+  margin-bottom: 15vh;
+}
+
+.App .mainImage .mydisplay .mainpage div h2 {
+  color: white;
+  font-family: "GalacticaGrid", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 40vw;
+}
+
+.App .mainImage .mydisplay .mainpage div h2 span {
+  color: red;
+}
+
+.App .mainImage .mydisplay .mainpage h3 {
+  color: white;
+  font-family: "GalacticaGrid", sans-serif;
+  font-size: 1rem;
+}
+
+.App .mainImage .mydisplay .mainpage h3 span {
+  color: red;
+}
+
+.App .mainImage .mydisplay .mynav {
+  width: 100%;
+}
+
+.App .mainImage .frontimages {
+  z-index: 2;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .mainImage .frontimages .img1 {
+  height: 30vh;
+  width: 30vw;
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 20vh;
+  left: 0vw;
+  opacity: 0%;
+  -webkit-animation: Imgone 60s infinite  ease-in-out;
+          animation: Imgone 60s infinite  ease-in-out;
+}
+
+.App .mainImage .frontimages .img1 .div {
+  width: 100%;
+  height: 100%;
+}
+
+.App .mainImage .frontimages .img1 .div .img {
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: black 10px 10px 30px;
+          box-shadow: black 10px 10px 30px;
+}
+
+.App .mainImage .frontimages .img2 {
+  height: 30vh;
+  width: 30vw;
+  background-position: center center;
+  background-size: cover;
+  z-index: 5;
+  position: absolute;
+  left: 10vw;
+  bottom: 15vh;
+  -webkit-animation: Imgtwo 60s infinite  ease-in-out;
+          animation: Imgtwo 60s infinite  ease-in-out;
+}
+
+.App .mainImage .frontimages .img2 .div {
+  width: 100%;
+  height: 100%;
+}
+
+.App .mainImage .frontimages .img2 .div .img {
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: black 10px 10px 30px;
+          box-shadow: black 10px 10px 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.App .mainImage .img3 {
+  height: 30vh;
+  width: 30vw;
+  background-position: center center;
+  background-size: 100%;
+  z-index: 4;
+  position: absolute;
+  bottom: 20vh;
+  left: 30vw;
+  opacity: 0%;
+  -webkit-animation: Imgthree 60s infinite  ease-in-out;
+          animation: Imgthree 60s infinite  ease-in-out;
+}
+
+.App .mainImage .img3 .div {
+  width: 100%;
+  height: 100%;
+}
+
+.App .mainImage .img3 .div .img {
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: black 10px 10px 30px;
+          box-shadow: black 10px 10px 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.App .mainImage button {
+  padding: 2vh 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  margin-bottom: 20vh;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #e20707;
+  color: #e20707;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.App .mainImage button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.App .mainImage .contact {
+  width: 10%;
+  position: absolute;
+  z-index: 300;
+  bottom: 10px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.App .mainImage .contact a {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .mainImage .contact a img {
+  width: 70%;
+  height: 70%;
+}
+
+.FrontOptions {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 140px;
+  margin-top: 50px;
+}
+
+.FrontOptions .popular {
+  color: white;
+  margin-left: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  margin-left: -10px;
+}
+
+.FrontOptions .popular span {
+  color: red;
+  margin-right: 9px;
+}
+
+.FrontOptions .popular .line {
+  height: 5px;
+  width: 80%;
+  margin-left: 20px;
+  background-color: #2f3541;
+  border-radius: 44px;
+}
+
+.FrontOptions .popular .line2 {
+  height: 5px;
+  width: 2%;
+  margin-left: 20px;
+  background-color: #2f3541;
+  margin-right: 20px;
+  border-radius: 44px;
+}
+
+.FrontOptions .Latest {
+  margin-top: 60px;
+}
+
+.FrontOptions .Tabbed {
+  margin-top: 60px;
+}
+
+.FrontOptions .Tabbed .tabmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+.FrontOptions .Tabbed .tabmenu .li {
+  background-color: #292e38;
+  color: white;
+  width: 10vw;
+  font-size: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.FrontOptions .Tabbed .tabmenu .li:hover {
+  background-color: #2f3541;
+}
+
+.FrontOptions .Tabbed .li {
+  background-color: #292e38;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.FrontOptions .Tabbed .li:hover {
+  background-color: #2f3541;
+}
+
+.FrontOptions .Tabbed .allbody {
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.FrontOptions .Tabbed .allbody .alltabbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  height: 35vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.FrontOptions .Tabbed .allbody .alltabbody .tablink {
+  width: 100%;
+  height: 100%;
+}
+
+.FrontOptions .Tabbed .allbody .alltabbody .tablink .tabimg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: background-size ease-in-out 0.4s;
+  transition: background-size ease-in-out 0.4s;
+}
+
+.FrontOptions .Tabbed .allbody .alltabbody .tablink .tabimg:hover {
+  background-size: 103%;
+}
+
+.FrontOptions .Tabbed .allbody .alltabbody .tabtitle {
+  white-space: wrap;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FrontOptions .Tabbed .allbody .alltabbody .tabtitle .p {
+  font-weight: lighter;
+  font-size: 0.8rem;
+  overflow: hidden;
+  margin: 1vh 0vw;
+}
+
+.FrontOptions .Tabbed .allbody .alltabbody .tabtitle h6 {
+  font-size: 1rem;
+  margin: 1vh 0vw;
+}
+
+.FrontOptions .Tabbed .allbody .divide {
+  margin-top: 12px;
+  padding: 0px;
+  height: 5px;
+  width: 100%;
+  background-color: #2f3541;
+  border-radius: 44px;
+}
+
+.FrontOptions .Tabbed .tab {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+  -ms-grid-columns: 3fr 1.2fr;
+      grid-template-columns: 3fr 1.2fr;
+}
+
+.FrontOptions .Tabbed .tab .main {
+  width: 100%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.FrontOptions .Tabbed .tab .infotab {
+  width: 100%;
+  margin-top: 16px;
+  overflow: hidden;
+  padding: 0px;
+  height: 90vh;
+  background-color: #292e38;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.FrontOptions .Tabbed .tab .infotab section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2f3541;
+  margin-bottom: 20px;
+}
+
+.FrontOptions .Tabbed .tab .infotab section h2 {
+  color: white;
+  font-weight: bold;
+  margin-left: 90px;
+}
+
+.FrontOptions .Tabbed .tab .infotab section div {
+  padding: 0px;
+  height: 3px;
+  width: 30%;
+  background-color: white;
+  border-radius: 44px;
+}
+
+.FrontOptions .Tabbed .tab .infotab .body {
+  width: 100%;
+  height: 20vh;
+  margin: 0%;
+  padding: 10% 0% 0% 0%;
+}
+
+.FrontOptions .Tabbed .tab .infotab .body a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.FrontOptions .Tabbed .tab .infotab .body a .img {
+  margin-left: 20px;
+  border-radius: 10px;
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: background-size ease-in-out 0.4s;
+  transition: background-size ease-in-out 0.4s;
+}
+
+.FrontOptions .Tabbed .tab .infotab .body a .img:hover {
+  background-size: 195%;
+}
+
+.FrontOptions .Tabbed .tab .infotab .body a div {
+  margin-left: 4px;
+}
+
+.FrontOptions .Tabbed .tab .infotab .body a div h5 {
+  margin-top: 10px;
+  color: white;
+}
+
+.FrontOptions .Tabbed .tab .infotab .body a div h5 span {
+  font-weight: lighter;
+}
+
+@-webkit-keyframes Imgone {
+  10% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+  20% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+  30% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  80% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  90% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+  100% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+}
+
+@keyframes Imgone {
+  10% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+  20% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+  30% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  80% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  90% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+  100% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    height: 10vh;
+    width: 20vw;
+    bottom: 20vh;
+  }
+}
+
+@-webkit-keyframes Imgtwo {
+  10% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  20% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  30% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  80% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  90% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10ew;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  100% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+}
+
+@keyframes Imgtwo {
+  10% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  20% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  30% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  80% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  90% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10ew;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  100% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+}
+
+@-webkit-keyframes Imgthree {
+  0% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  10% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  20% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  30% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vw;
+    width: 20vw;
+  }
+  80% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  90% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  100% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+}
+
+@keyframes Imgthree {
+  0% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  10% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  20% {
+    opacity: 100%;
+    z-index: 8;
+    left: 10vw;
+    height: 30vh;
+    width: 30vw;
+    bottom: 15vh;
+  }
+  30% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vw;
+    width: 20vw;
+  }
+  80% {
+    opacity: 0%;
+    z-index: 0;
+    left: 0vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  90% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+  100% {
+    opacity: 0%;
+    z-index: 5;
+    left: 30vw;
+    bottom: 20vh;
+    height: 10vh;
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .App {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .dropdown {
+    height: 20vh;
+  }
+  .App .dropdown .ul li {
+    font-size: 2vw;
+  }
+  .App .menuicon {
+    display: block;
+  }
+  .App .mainImage {
+    height: 70vh;
+    background-size: cover;
+  }
+  .App .mainImage .mydisplay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    top: 7vh;
+    width: 70vw;
+    height: 70vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap;
+  }
+  .App .mainImage .mydisplay .mainpage div {
+    width: 100%;
+  }
+  .App .mainImage .mydisplay .mainpage div h2 {
+    width: 100%;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .App .mainImage .mydisplay .mainpage h3 {
+    font: size 1rem;
+  }
+  .App .mainImage .mydisplay .frontimages {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    right: -10vw;
+  }
+  .App .mainImage button {
+    margin-bottom: 3vh;
+  }
+  .App .FrontOptions {
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0%;
+  }
+  .App .FrontOptions .popular {
+    width: 90%;
+  }
+  .App .FrontOptions .FrontImage {
+    width: 90%;
+  }
+  .App .FrontOptions .FrontImage .gamebody a .img {
+    background-size: cover;
+  }
+  .App .FrontOptions .Latest {
+    width: 90%;
+    height: 90%;
+    margin: 0px;
+  }
+  .App .FrontOptions .Latest .popular {
+    width: 100%;
+  }
+  .App .FrontOptions .Latest .Tabbed .tab {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .App .FrontOptions .Latest .Tabbed .tab .infotab {
+    display: none;
+  }
+  .App .FrontOptions .Latest .FrontImage {
+    width: 100%;
+  }
+  .App .FrontOptions .Latest .FrontImage .gamebody .img {
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .App .dropdown {
+    height: 30vh;
+  }
+  .App .dropdown .ul li {
+    font-size: 3.5vw;
+  }
+  .App .mainImage .mydisplay .mainpage div h2 {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+  .App .mainImage .mydisplay .mainpage h3 {
+    font-size: 0.5rem;
+  }
+  .App .mainImage .contact {
+    display: none;
+  }
+  .FrontOptions .FrontImage .gamebody {
+    width: 42vw;
+  }
+  .FrontOptions .FrontImage .gamebody:nth-child(3) {
+    display: none;
+  }
+  .FrontOptions .Latest .Tabbed .tab .main .tabmenu li {
+    width: 15vw;
+    font-size: 2vw;
+  }
+  .FrontOptions .Latest .Tabbed .tab .allbody .body .tablink {
+    width: 50vw;
+  }
+  .FrontOptions .Latest .Tabbed .tab .allbody .body .tabtitle {
+    width: 30vw;
+  }
+  footer {
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  footer div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+  }
+  footer div .Ads {
+    width: 95vw;
+    text-align: center;
+  }
+  footer div .contact {
+    width: 100vw;
+  }
+  .Latest .Tabbed .tab .main .allbody .alltabbody .tabtitle h4 {
+    font-size: 0.7rem;
+  }
+  .Latest .Tabbed .tab .main .allbody .alltabbody .tabtitle h6 {
+    font-size: 0.5rem;
+  }
+  .Latest .Tabbed .tab .main .allbody .alltabbody .tabtitle .p {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-height: 560px) {
+  .App .menuicon {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    top: 0px;
+    width: 7vw;
+  }
+  .App .mainImage .mydisplay .frontimages {
+    display: none;
+  }
+  .App .mainImage .dropdown {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 670px) and (max-height: 450px) {
+  .App .Latest .Tabbed .tab .main .allbody .alltabbody .tabtitle .p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Index.css.map */

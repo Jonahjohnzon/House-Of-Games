@@ -1,0 +1,87 @@
+.navmenu {
+  position: fixed;
+  top: 10vh;
+  right: 22vw;
+  width: 15vw;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(24, 28, 35, 0.3);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  z-index: 60;
+}
+
+.navmenu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navmenu ul li {
+  white-space: nowrap;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.navmenu ul li:hover {
+  border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 930px) {
+  .navmenu {
+    top: 20vh;
+    right: 30vw;
+    height: 55vh;
+    width: 30vw;
+  }
+  .navmenu ul li {
+    font-size: 2.3vw;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navmenu {
+    top: 15vh;
+    right: 30vw;
+    width: 45vw;
+    height: 64vh;
+  }
+  .navmenu ul li {
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 450px) and (max-width: 420px) and (max-height: 740px) {
+  .navmenu {
+    height: 78vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .navmenu {
+    top: 15vh;
+    right: 30vw;
+    width: 30vw;
+    height: 90vh;
+  }
+  .navmenu ul li {
+    font-size: 1.4vw;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
